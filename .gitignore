@@ -12,7 +12,6 @@ __pycache__/
 .env
 venv/
 env/
-Pipfile.lock
 *.egg-info/
 .mypy_cache/
 .pytest_cache/
