@@ -1,0 +1,98 @@
+/* ====== Expense Report Page (Matching Profile Style) ====== */
+
+.report-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0a0f1c, #111827);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  color: #f0f4f8;
+}
+
+/* ===== Title Section ===== */
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-subtitle {
+  color: #9ca3af;
+  margin-bottom: 40px;
+}
+
+/* ===== Report Card Grid ===== */
+.report-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* ===== Individual Card ===== */
+.report-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.report-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+/* ===== Title & Description ===== */
+.report-card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.report-desc {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* ===== Buttons ===== */
+.download-btn {
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+.download-btn.loading {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

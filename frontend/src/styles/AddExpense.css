@@ -1,0 +1,153 @@
+/* ===== Force Theme Match: Add Expense Page (Profile Theme) ===== */
+.add-expense-container {
+  background: radial-gradient(circle at top left, #0a0f1c, #111827);
+  min-height: 100vh;
+  padding-top: 40px;
+  font-family: "Inter", sans-serif;
+  color: #e0e6ff !important;
+}
+
+/* Card container */
+.add-expense-container .card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(14px);
+  transition: 0.3s all ease-in-out;
+}
+
+.add-expense-container .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+}
+
+/* Header */
+.add-expense-container h3 {
+  color: #3d9bff !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin-bottom: 30px;
+}
+
+/* === Uniform Label Style === */
+.add-expense-container .form-label {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 6px !important;
+  background: rgba(61, 155, 255, 0.15) !important;
+  color: #e6ebff !important;
+  font-weight: 600 !important;
+  padding: 6px 14px !important;
+  border-radius: 12px !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 8px !important;
+  border: 1px solid rgba(61, 155, 255, 0.2) !important;
+  box-shadow: inset 0 0 4px rgba(61, 155, 255, 0.15) !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.add-expense-container .form-label:hover {
+  background: rgba(61, 155, 255, 0.25) !important;
+}
+
+/* === Inputs & Dropdowns === */
+.add-expense-container .form-control,
+.add-expense-container .form-select {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+  color: #e9ecff !important;
+  padding: 10px 14px !important;
+  height: 46px !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+/* Focus glow */
+.add-expense-container .form-control:focus,
+.add-expense-container .form-select:focus {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: #3d9bff !important;
+  box-shadow: 0 0 8px rgba(61, 155, 255, 0.4) !important;
+  color: #ffffff !important;
+}
+
+/* Placeholder */
+.add-expense-container .form-control::placeholder {
+  color: rgba(220, 230, 255, 0.65) !important;
+}
+
+/* Dropdown options */
+.add-expense-container select option {
+  background: rgba(61, 155, 255, 0.4) !important;
+  color: #0a0a23 !important;
+  font-weight: 500 !important;
+}
+
+.add-expense-container select option:hover,
+.add-expense-container select option:focus,
+.add-expense-container select option:checked {
+  background: #3d9bff !important;
+  color: #ffffff !important;
+}
+
+/* Remove stepper from amount input */
+.add-expense-container input[type="number"]::-webkit-inner-spin-button,
+.add-expense-container input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+.add-expense-container input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+
+/* Textarea */
+.add-expense-container textarea.form-control {
+  height: 80px !important;
+  resize: none !important;
+}
+
+/* Buttons */
+.add-expense-container .btn-primary {
+  background: linear-gradient(90deg, #3d9bff, #1a6eff) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  color: white !important;
+  font-weight: 600 !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.add-expense-container .btn-primary:hover {
+  background: linear-gradient(90deg, #559dff, #2b83ff) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 10px rgba(61, 155, 255, 0.4) !important;
+}
+
+.add-expense-container .btn-outline-primary {
+  border: 1px solid #3d9bff !important;
+  color: #3d9bff !important;
+  border-radius: 10px !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.add-expense-container .btn-outline-primary:hover {
+  background: #3d9bff !important;
+  color: white !important;
+}
+
+.add-expense-container .btn-outline-danger {
+  border-radius: 10px !important;
+}
+
+/* Layout Fixes */
+.add-expense-container .row.g-4 > * {
+  margin-bottom: 12px !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .add-expense-container .card {
+    padding: 1.5rem !important;
+  }
+}

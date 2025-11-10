@@ -1,0 +1,66 @@
+/* 🌈 Global Background (fixes white screen) */
+body {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%) !important;
+  min-height: 100vh;
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🌐 Navbar */
+.custom-navbar {
+  background: rgba(23, 108, 211, 0.3) !important; /* semi-transparent by default */
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+  z-index: 1000;
+}
+
+/* When scrolled, make it more solid */
+.navbar-scrolled {
+  background: rgba(23, 108, 211, 0.95) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Nav Links */
+.navbar .nav-link {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd43b !important;
+  transform: scale(1.05);
+}
+
+/* Active link (highlight current route) */
+.navbar .nav-link.active {
+  color: #ffd43b !important;
+}
+
+/* Brand Styling */
+.navbar-brand {
+  color: white !important;
+  transition: transform 0.3s;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+/* Signup button hover glow */
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: rgba(23, 108, 211, 0.95);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,90 @@
+/* ===== Dashboard Page ===== */
+.dashboard-wrapper {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0a0f1c, #111827);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+.dashboard-card-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 60px;
+  width: 100%;
+  max-width: 1300px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: #f0f4f8;
+}
+
+/* ===== Header ===== */
+.text-gradient {
+  background: linear-gradient(90deg, #00bfff, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dashboard-header p {
+  color: #9ca3af;
+}
+
+/* ===== Info Cards ===== */
+.dashboard-info-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+  color: #f8fafc;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.dashboard-info-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.dashboard-icon {
+  color: #00bfff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* ===== Chart Cards ===== */
+.dashboard-chart-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 25px 35px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #f8fafc;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.2);
+}
+
+.chart-title {
+  font-size: 1.2rem;
+  color: #38bdf8;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ===== Tooltip Style ===== */
+.recharts-tooltip-wrapper {
+  color: #111827 !important;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* ===== Loading ===== */
+.dashboard-loading {
+  min-height: 100vh;
+  background: #0a0f1c;
+}
