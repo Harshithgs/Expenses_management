@@ -1,13 +1,12 @@
-kind: Service
+# k8s/backend-service.yaml
 apiVersion: v1
+kind: Service
 metadata:
   name: django-backend-service
 spec:
   selector:
     app: django-backend
   ports:
-  - protocol: TCP
-    port: 8000
+  - port: 8000
     targetPort: 8000
-    nodePort: 30080
-  type: NodePort
+  type: ClusterIP
