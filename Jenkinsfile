@@ -53,10 +53,6 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying to Minikube...'
-
-                    // Copy kubeconfig from default location if needed
-                    sh 'mkdir -p $HOME/.kube && cp /home/devops/.kube/config $HOME/.kube/config || echo "Using existing config"'
-
                     // Apply K8s manifests
                     sh '''
                        minikube kubectl -- apply -f k8s/backend-deployment.yaml
