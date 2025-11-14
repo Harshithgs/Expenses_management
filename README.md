@@ -44,7 +44,7 @@ The project is fully containerized using **Docker**, deployed on **Minikube (Kub
 ### **Frontend**
 - React  
 - Axios
-- 
+  
 ### **Backend**
 - Django  
 - Django REST Framework  
